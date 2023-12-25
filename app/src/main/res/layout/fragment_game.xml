@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FragmentGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:gravity="center"
+                android:text="1:00"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                app:srcCompat="@drawable/icon_coin" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutStyle">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button00"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card00"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image00"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button01"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card01"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image01"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button02"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card02"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image02"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button03"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card03"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image03"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutStyle">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card10"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button11"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card11"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image11"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button12"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card12"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image12"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button13"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card13"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image13"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutStyle">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button20"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card20"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image20"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button21"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card21"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image21"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button22"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card22"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image22"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button23"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card23"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image23"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutStyle">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button30"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card30"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image30"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button31"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card31"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image31"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button32"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card32"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image32"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button33"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card33"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image33"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutStyle">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button40"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card40"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image40"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button41"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card41"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image41"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button42"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card42"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image42"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button43"
+                style="@style/buttonCard"
+                android:text="?" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card43"
+                style="@style/cardStyle">
+
+                <ImageView
+                    android:id="@+id/image43"
+                    style="@style/imageStyle"
+                    app:srcCompat="@drawable/icon_1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

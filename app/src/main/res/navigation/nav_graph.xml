@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/fragmentStartGame">
+
+    <fragment
+        android:id="@+id/fragmentEndGame"
+        android:name="com.example.matchinggame.UI.FragmentEndGame"
+        android:label="fragment_end_game"
+        tools:layout="@layout/fragment_end_game" >
+        <action
+            android:id="@+id/action_fragmentEndGame_to_fragmentStartGame"
+            app:popUpTo="@id/fragmentEndGame"
+            app:popUpToInclusive="true"
+            app:destination="@id/fragmentStartGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStartGame"
+        android:name="com.example.matchinggame.UI.FragmentStartGame"
+        android:label="fragment_start_game"
+        tools:layout="@layout/fragment_start_game" >
+        <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentStartGame"
+            android:id="@+id/action_fragmentStartGame_to_fragmentGame"
+            app:destination="@id/fragmentGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGame"
+        android:name="com.example.matchinggame.UI.FragmentGame"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_fragmentGame_to_fragmentEndGame"
+            app:destination="@id/fragmentEndGame"
+            app:popUpTo="@id/fragmentGame"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

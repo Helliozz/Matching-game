@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonCard">
+        <item name="android:textSize">50sp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="layoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">4</item>
+    </style>
+
+    <style name="cardStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="cardBackgroundColor">#FFFFFF</item>
+    </style>
+
+    <style name="imageStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
